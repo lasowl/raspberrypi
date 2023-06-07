@@ -72,6 +72,10 @@ try:
             if temperature >= 26:
                 GPIO.output(LED,GPIO.HIGH)
                 print("overheated")
+                
+             if temperature <=26:
+                GPIO.output(LED,GPIO.LOW)
+                print("not overheated")
 
         except RuntimeError as error:
             time.sleep(0)
