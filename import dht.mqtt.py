@@ -69,9 +69,9 @@ try:
             
             print(value)
             
-            if temperature>=26:
-                GPIO.OUTPUT(LED,True)
-                print("object overheated")
+            if temperature >= 26:
+                GPIO.output(LED,GPIO.HIGH)
+                print("overheated")
 
         except RuntimeError as error:
             time.sleep(2)
