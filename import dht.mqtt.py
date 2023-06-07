@@ -74,7 +74,7 @@ try:
                 print("overheated")
 
         except RuntimeError as error:
-            time.sleep(2)
+            time.sleep(0)
             continue
 
         time.sleep(5)
