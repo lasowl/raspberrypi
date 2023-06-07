@@ -77,7 +77,7 @@ try:
             time.sleep(0)
             continue
 
-        time.sleep(5)
+        time.sleep(0)
         
         
 except KeyboardInterrupt:
