@@ -3,6 +3,7 @@ import RPi.GPIO as GPIO
 import time
 import psutil
 import adafruit_dht
+import json
 
 
 for proc in psutil.process_iter():
