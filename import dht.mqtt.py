@@ -62,10 +62,12 @@ try:
             print(current_time,end="",flush=True)
             time.sleep(1)
             print("\r")
-
-            client.publish(MQTT_PUB_TOPIC,sensing)
             
-            print(sensing)
+            value = json.dumps(sensing)
+            client.publish(MQTT_PUB_TOPIC,value)
+            
+            
+            print(value)
             
             if temperature>=26:
                 GPIO.OUTPUT(LED,True)
