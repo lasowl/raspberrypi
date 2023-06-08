@@ -1,0 +1,12 @@
+import RPi.GPIO as GPIO
+RED_LED = 23
+GREEN_LED = 24
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(RED_LED,GPIO.OUT)
+GPIO.setup(GREEN_LED,GPIO.OUT)
+
+GPIO.output(RED_LED,GPIO.LOW)
+GPIO.output(GREEN_LED,GPIO.LOW)
