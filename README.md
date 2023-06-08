@@ -15,7 +15,7 @@ python으로 만든 시계를 통해 시간을 볼 수 있고,mqtt에 실시간 
 ![image](https://github.com/lasowl/raspberrypi/assets/116951813/6e5ba0d3-8f69-4c41-bc45-e225aa9b2ebc)
 
 ### 작품 사진
-![20230608_140142](https://github.com/lasowl/raspberrypi/assets/116951813/144f2ea7-9757-4dd4-8d46-81f75f809995)
+![20230608_150544](https://github.com/lasowl/raspberrypi/assets/116951813/e872db61-ad3e-4da2-bcf7-de2efb0c15cd)
 
 ## 동작 시나리오 및 예시
 현재 시간을 화면에 표시-> 온습도 센서가 온습도를 측정하여 화면에 표시-> 측정한 온습도가 26도 이상인 경우 LED가 켜지면서 "overheated"라는 문구를 출력
