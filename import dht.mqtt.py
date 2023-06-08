@@ -34,14 +34,6 @@ def on_publish(client, userdata, mid):
 def on_message(client, userdata, message):
     result = str(message.payload.decode("utf-8"))
     print("received message = ", str(message.payload.decode("utf-8")))
-    if result.upper() == "ON":
-        print("LED ON !!!")
-        GPIO.output(LED, GPIO.HIGH)
-    elif result.upper() == "OFF":
-        print("LED OFF !!!")
-        GPIO.output(LED, GPIO.LOW)
-    else:
-        print("Illegal Argument Exception!")
 
 client = mqtt.Client()
 client.on_message = on_message
