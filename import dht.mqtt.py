@@ -64,13 +64,13 @@ try:
             print(value)
             
             if temperature >= 26:
-                GPIO.output(GREEN_LED,GPIO.HIGH)
-                GPIO.output(RED_LED,GPIO.LOW)
+                GPIO.output(GREEN_LED,GPIO.LOW)
+                GPIO.output(RED_LED,GPIO.HIGH)
                 print("overheated")
                 
             if temperature <=26:
-                GPIO.output(GREEN_LED,GPIO.LOW)
-                GPIO.output(RED_LED,GPIO.HIGH)
+                GPIO.output(GREEN_LED,GPIO.HIGH)
+                GPIO.output(RED_LED,GPIO.LOW)
                 print("not overheated")
 
         except RuntimeError as error:
