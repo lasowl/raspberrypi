@@ -27,5 +27,6 @@ python으로 만든 시계를 통해 시간을 볼 수 있고,mqtt가 실시간 
 
 
 참고자료:
-https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=dlwjddns5&logNo=220717760126
+- https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=dlwjddns5&logNo=220717760126
+- https://www.daleseo.com/python-time/
 - [11주차] 라즈베리파이와 GPIO#1
