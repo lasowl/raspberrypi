@@ -15,9 +15,11 @@ dht_device = adafruit_dht.DHT22(4)
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 
-LED = 23
+RED_LED = 23
+GREEN_LED = 24
 
-GPIO.setup(LED,GPIO.OUT)
+GPIO.setup(RED_LED,GPIO.OUT)
+GPIO.setup(GREEN_LED,GPIO.OUT)
 
 MQTT_HOST = "broker.emqx.io"
 MQTT_PORT = 1883
@@ -70,11 +72,13 @@ try:
             print(value)
             
             if temperature >= 26:
-                GPIO.output(LED,GPIO.HIGH)
+                GPIO.output(GREEN_LED,GPIO.HIGH)
+                GPIO.output(RED_LED,GPIO.LOW)
                 print("overheated")
                 
             if temperature <=26:
-                GPIO.output(LED,GPIO.LOW)
+                GPIO.output(GREEN_LED,GPIO.LOW)
+                GPIO.output(RED_LED,GPIO.HIGH)
                 print("not overheated")
 
         except RuntimeError as error:
