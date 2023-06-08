@@ -78,10 +78,10 @@ try:
                 print("not overheated")
 
         except RuntimeError as error:
-            time.sleep(0)
+            time.sleep(0.1)
             continue
 
-        time.sleep(0)
+        time.sleep(0.1)
         
         
 except KeyboardInterrupt:
