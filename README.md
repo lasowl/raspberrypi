@@ -12,6 +12,7 @@ python으로 만든 시계를 통해 시간을 볼 수 있고,mqtt가 실시간 
 ## 완성 작품
 
 ### 작품회로도
+![image](https://github.com/lasowl/raspberrypi/assets/116951813/6e5ba0d3-8f69-4c41-bc45-e225aa9b2ebc)
 
 ### 작품 사진
 
